@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi mercado liebre</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header>
+    <div class="arriba">
+            <div class="milogo">
+              <a href="/"> <img src="/img/logo.svg" alt="logo" width="150"></a>
+              </div> 
+              <div class="search-bar">
+                <form method="get" class="search-bar">
+                 <input class="busqueda" type="text" placeholder="Buscar productos, marcas...">
+                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+              </div>
+            </div>
+            <h5 class="pagos">
+                <i class="fa-solid fa-hand-holding-dollar"></i>
+                Comprá en cuotas y sin tarjeta de crédito
+            </h5>
+        </div>
+        
+    </div>
+        <nav class="menu">
+            <div class="principal">
+            <ul>
+                <li> <a href="#ofertas">Ofertas</a></li>
+                <li><a href="#tiendas">Tiendas oficiales</a></li>
+                <li><a href="#vender">Vender</a></li>
+                <li><a href="#ayuda">Ayuda</a></li>
+            </ul>
+            </div>
+            <div class="secundario">
+            <ul>
+                <li><a href="/register">Crea tu cuenta <i class="fa-regular fa-address-card"></i> </a> </li>
+                <li> <a href="/login">Ingresa <i class="fa-solid fa-arrow-right-to-bracket"></i> </a> </li>
+                <li><a href="#miscompras">Mis compras <i class="fa-solid fa-basket-shopping"></i> </a> </li>
+            </ul>
+        </nav>
+        <div class="burger-menu">
+            <i class="fas fa-bars"></i>
+         </div>
+        
+    </header>
+
+    <main id="main-form">
+        <h3>Registrate</h3>
+        <form action="/register" method="post" class="formulario">
+            <input type="text" name="nombreyapellido" placeholder="Nombre y Apellido" required>
+            <input type="text" name="usuario" placeholder="Nombre de usuari@">
+            <input type="email" name="email" placeholder="Correo electronico" required>
+            <input type="text" name="domicilio" placeholder="Domicilio">
+            <label><strong>Fecha de nacimiento</strong></label>
+            <input type="date" name="fechanacimiento">
+
+        <h4>Perfil del usuario</h4>
+           <div class="perfilusuario">
+             <input type="radio" name="perfilusuario" value="Vendedor">
+             <label>Vendedor</label>
+             <input type="radio" name="perfilusuario" value="Comprador">
+             <label>Comprador</label>
+            </div>
+        <h4>Categorías de interés</h4>
+        <div class="categorias">
+            <input type="checkbox" name="categoria" value="Electro">
+            <label>Electro</label>
+            <input type="checkbox" name="categoria" value="Moda">
+            <label>Moda</label>
+            <input type="checkbox" name="categoria" value="Hogar">
+            <label>Hogar</label>
+            <input type="checkbox" name="categoria" value="Jugueteria">
+            <label>Jugueteria</label>
+            <input type="checkbox" name="categoria" value="Vida Sana">
+            <label>Vida Sana</label>
+        </div>
+
+        <h4>Foto de usuario</h4>
+            <input type="file" name="foto">
+
+            <input type="text" name="contraseña" placeholder="Contraseña">
+            <input type="text" name="confirmar" placeholder="Confirmar contraseña">
+            
+            <input type="reset" class="fin-formulario" value="Borrar">
+            <input type="submit" class="fin-formulario" value="Enviar">
+        </form>
+
+    </main>
+</body>
+<footer></footer>
