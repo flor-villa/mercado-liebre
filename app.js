@@ -4,9 +4,9 @@ const path = require('path');
 
 app.use(express.static(path.resolve(__dirname, 'public')));
 
-const PORT = 3000
+const port = process.env.PORT || 3001;
 
-app.listen( PORT, () => console.log(`Server up on PORT : ${3000}`) );
+app.listen( port, () => console.log('Servidor funcionando') );
 
 app.get('/' , (req, res) => {
     res.sendFile(path.join(__dirname, './src/views/home.html'))
