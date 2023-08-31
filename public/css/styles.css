@@ -15,11 +15,7 @@ header nav.menu{
 }
 header{
     background-color: #EAC926;
-    padding: auto;
-    box-sizing: border-box;
-    display: block;
-    height: 80%;
-    width: 100%;
+    padding:0 1em 0 1em;
 }
 .menu{
     display: flex;
